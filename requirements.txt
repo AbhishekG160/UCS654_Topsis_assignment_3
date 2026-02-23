@@ -1,0 +1,28 @@
+# -----------------------------------------------------------------------
+# PyPI Text Classification — TOPSIS Model Selection
+# -----------------------------------------------------------------------
+# Install all dependencies:
+#   pip install -r requirements.txt
+#
+# Additional setup after install:
+#   python -m textblob.download_corpora
+#   python -m nltk.downloader vader_lexicon
+# -----------------------------------------------------------------------
+
+# ── Core ML / NLP models (PyPI packages being benchmarked) ─────────────
+textblob>=0.18.0
+vaderSentiment>=3.3.2
+flair>=0.13.1
+transformers>=4.40.0
+torch>=2.2.0
+
+# ── NLTK (wraps VADER lexicon) ──────────────────────────────────────────
+nltk>=3.8.1
+
+# ── Evaluation & data handling ──────────────────────────────────────────
+scikit-learn>=1.4.0
+numpy>=1.26.0
+pandas>=2.2.0
+
+# ── Excel export ────────────────────────────────────────────────────────
+openpyxl>=3.1.2
