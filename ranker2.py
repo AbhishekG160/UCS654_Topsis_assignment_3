@@ -1,12 +1,9 @@
 """
-=======================================================================
   TEXT CLASSIFICATION MODEL SELECTION USING TOPSIS
   Using real PyPI packages: TextBlob, VADER, Flair, Transformers, NLTK
-=======================================================================
-
+  
 Setup (inside your virtual environment):
-    pip install textblob vaderSentiment flair transformers torch nltk
-        numpy pandas scikit-learn openpyxl
+    pip install textblob vaderSentiment flair transformers torch nltk numpy pandas scikit-learn openpyxl
     python -m textblob.download_corpora
     python -m nltk.downloader vader_lexicon
 
@@ -117,7 +114,6 @@ BENEFIT = {
 
 # -----------------------------------------------------------------------
 # HELPERS
-# -----------------------------------------------------------------------
 def normalize_sentiment(raw: str) -> int:
     r = str(raw).lower()
     if any(w in r for w in ["pos", "1", "good", "happy", "joy"]):
@@ -549,4 +545,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
